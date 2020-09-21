@@ -9,8 +9,7 @@ pip3 install adul
 ```
 ### Usage
 ```
-from adul import super_ai
-cd demo
+git clone https://github.com/adulgun/adul.git
 ```
 
 ### home work 1

@@ -12,13 +12,13 @@ pip3 install adul
 git clone https://github.com/adulgun/adul.git
 ```
 
-### home work 1
+### home work 1 Quiz (A Win) 
 * นับว่า alphabet ใน name list กี่ตัว
 ```
 python3 count_alphabet.py
 ```
 
-### home work 2
+### home work 2 A. Thanaruk's Quiz
 * เขียนโปรแกรมหาค่าสูงสุดในลิสต์
 ```
 python3 maximum_list.py

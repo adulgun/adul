@@ -1,3 +1,6 @@
+# 22p21i0098-อดุลวิทย์
+# https://github.com/adulgun/adul
+
 import numpy as np
 import sys
 import os
@@ -9,10 +12,19 @@ from matplotlib.animation import FuncAnimation
 import more_itertools
 from more_itertools import locate
 
-sys.path.append(os.path.abspath(os.path.join('..')))
-from super_ai.homework import *
+def depth_first_search(graph, source):
+    path = []
+    stack = [source]
+    while(len(stack) != 0):
+        s = stack.pop()
+        if s not in path:
+            path.append(s)
+        if s not in graph:
+            continue
+        for neighbor in graph[s]:
+            stack.append(neighbor)
+    return path
 
-hw = Homework()
 
 graph = {"A": ["D", "C", "B"],
          "B": ["E"],
@@ -20,7 +32,7 @@ graph = {"A": ["D", "C", "B"],
          "D": ["H"],
          "E": ["I"],
          "F": ["J"]}
-DFS_path = hw.depth_first_search(graph, "A")
+DFS_path = depth_first_search(graph, "A")
 G = nx.Graph(graph)
 list_G = list(G.nodes)
 lenght_G = len(list_G)

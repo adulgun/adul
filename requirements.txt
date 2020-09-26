@@ -2,5 +2,4 @@ numpy
 more_itertools
 networkx
 matplotlib
-python3-tk
 seaborn

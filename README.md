@@ -5,8 +5,8 @@ https://pypi.org/project/adul/
 ### Install and Usage
 ```
 git clone https://github.com/adulgun/adul.git
+cd adul
 pip3 install -r requirements.txt
-pip3 install adul
 ```
 
 ### home work 2 A. Thanaruk's Quiz
